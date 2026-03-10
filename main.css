@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to bottom left, #092c01, rgb(63, 63, 63), black);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: clamp(50px, 10vh, 80px);
+}
+
+img {
+    width: 90vw;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: auto;
+}
+
+p {
+    font-size: clamp(20px, 5vw, 32px);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 15px;
+    margin-top: 40px;
+}
+
+.primeiroInput, .segundoInput {
+    width: clamp(200px, 80vw, 342px);
+    height: clamp(50px, 12vw, 72px);
+    border-radius: 14px;
+    border: none;
+    font-size: clamp(20px, 4vw, 40px);
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    background-color: #525252;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto;
+    padding: 15px;
+    display: block;
+}
+
+@media (min-width: 740px) {
+    .primeiroInput, .segundoInput {
+        display: inline-block;
+        margin: 10px 10px 10px 10px;
+    }
+}
+
+button {
+    width: clamp(200px, 80vw, 342px);
+    height: clamp(50px, 12vw, 72px);
+    border-radius: 14px;
+    border: none;
+    font-size: clamp(20px, 4vw, 40px);
+    font-family: 'Roboto', sans-serif;
+    background-color: #aec346;
+    color: #ffffff;
+    cursor: pointer;
+    margin: 20px auto;
+    display: block;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+button:active {
+    opacity: 0.6;
+}
+
+footer {
+    font-size: clamp(12px, 3vw, 16px);
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    height: clamp(50px, 10vh, 60px);
+    letter-spacing: 0px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #092c01;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    display: flex;
+    margin-left: calc(-50vw + 50%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
